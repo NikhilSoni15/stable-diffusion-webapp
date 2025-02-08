@@ -21,7 +21,7 @@ def decode_base64_image(image_b64):
 
 # Gradio function to interact with backend
 def generate_image(prompt, rating=50):
-    url = "https://ee14-34-90-101-105.ngrok-free.app/generate" # Replace with your ngrok URL
+    url = "url_from_ngrok/generate" # Replace with your ngrok URL
     payload = {
         "prompt": prompt,
         "guidance_scale": 7.5 + (rating / 20),  # Adjust based on rating
